@@ -80,21 +80,27 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
 
     def setA_btn(self):
         try:
-            core.A = set(self.lineEdit_9.text().split(", "))
+            s = self.lineEdit_9.text().split(", ")
+            for e in s:
+                core.A.add(int(e))
             print("A: {}".format(core.A))
         except:
             showError("Некоректно введені дані")
 
     def setB_btn(self):
         try:
-            core.B = set(self.lineEdit_8.text().split(", "))
+            s = self.lineEdit_8.text().split(", ")
+            for e in s:
+                core.B.add(int(e))
             print("B: {}".format(core.B))
         except:
             showError("Некоректно введені дані")
 
     def setC_btn(self):
         try:
-            core.C = set(self.lineEdit_7.text().split(", "))
+            s = self.lineEdit_7.text().split(", ")
+            for e in s:
+                core.C.add(int(e))
             print("C: {}".format(core.C))
         except:
             showError("Некоректно введені дані")

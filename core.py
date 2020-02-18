@@ -1,4 +1,4 @@
-A = {}
-B = {}
-C = {}
-U = {}
+A = set()
+B = set()
+C = set()
+U = set()
