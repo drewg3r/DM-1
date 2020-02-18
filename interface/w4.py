@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form4(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(400, 180)
+        Form.resize(400, 179)
         self.label_5 = QtWidgets.QLabel(Form)
         self.label_5.setGeometry(QtCore.QRect(20, 20, 31, 21))
         self.label_5.setObjectName("label_5")
@@ -47,5 +47,5 @@ class Ui_Form4(object):
         self.label_5.setText(_translate("Form", "X=B"))
         self.label_4.setText(_translate("Form", "Y=C"))
         self.pushButton.setText(_translate("Form", "Z"))
-        self.label_7.setText(_translate("Form", "Z=X  Y"))
+        self.label_7.setText(_translate("Form", "Z=X ⋂ Y"))
         self.pushButton_2.setText(_translate("Form", "Зберегти"))

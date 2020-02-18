@@ -24,3 +24,7 @@ class MyForm4(QtWidgets.QMainWindow, interface.w4.Ui_Form4):
         self.setupUi(self)
         self.lineEdit_4.setText(str(core.B))
         self.lineEdit_6.setText(str(core.C))
+        self.pushButton.clicked.connect(self.z_btn)
+
+    def z_btn(self):
+        self.lineEdit_7.setText(str(fintersection(core.B, core.C)))

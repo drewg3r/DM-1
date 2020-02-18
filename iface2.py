@@ -38,7 +38,6 @@ class MyForm2(QtWidgets.QMainWindow, interface.w2.Ui_Form2):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        global A
         self.lineEdit_4.setText(str(core.A))
         self.lineEdit_6.setText(str(core.B))
         self.lineEdit_5.setText(str(core.C))
