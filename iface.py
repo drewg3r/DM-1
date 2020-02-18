@@ -1,7 +1,9 @@
 import sys
 from PyQt5 import QtWidgets
-import interface.w1, iface2
+import interface.w1, iface2, iface3, iface4
 from interface.w2 import Ui_Form2
+from interface.w3 import Ui_Form3
+from interface.w4 import Ui_Form4
 from PyQt5.QtWidgets import *
 import random
 import core
@@ -30,6 +32,8 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
         self.pushButton_6.clicked.connect(self.setB_btn)
         self.pushButton_7.clicked.connect(self.setC_btn)
         self.pushButton_8.clicked.connect(self.secondW_btn)
+        self.pushButton_9.clicked.connect(self.thirdW_btn)
+        self.pushButton_10.clicked.connect(self.fourthW_btn)
 
     def var_btn(self):
         try:
@@ -106,9 +110,13 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
             showError("Некоректно введені дані")
 
     def secondW_btn(self):
-        """self.window = QtWidgets.QMainWindow()  # Создаём объект класса ExampleApp
-        self.ui = Ui_W2()
-        self.ui.setupUi(self.window)
-        self.window.show()"""
         self.window = iface2.MyForm2()  # Создаём объект класса ExampleApp
+        self.window.show()
+
+    def thirdW_btn(self):
+        self.window = iface3.MyForm3()  # Создаём объект класса ExampleApp
+        self.window.show()
+
+    def fourthW_btn(self):
+        self.window = iface4.MyForm4()  # Создаём объект класса ExampleApp
         self.window.show()

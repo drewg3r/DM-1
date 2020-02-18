@@ -47,6 +47,9 @@ class MyForm2(QtWidgets.QMainWindow, interface.w2.Ui_Form2):
         # pushButton pushButton_2
 
     def calc_btn(self):
-        r = next(self.g)
-        self.lineEdit_7.setText(r[0])
-        self.lineEdit_8.setText(r[1])
+        try:
+            r = next(self.g)
+            self.lineEdit_7.setText(r[0])
+            self.lineEdit_8.setText(r[1])
+        except:
+            pass
