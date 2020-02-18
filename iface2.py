@@ -7,7 +7,7 @@ import random
 
 # D = !C ⋂ (A \ C) ⋂ (B \ C) ⋂ (!C ∪ B)
 def calcgen():
-    for i in list(range(5)):
+    for i in list(range(6)):
         if i == 0:
             R1 = set()
             R1 = core.A - core.C
@@ -22,15 +22,15 @@ def calcgen():
             yield "!C ⋂ {} ⋂ {} ⋂ {}".format(R1, R2, R3), "!C ∪ B | {}".format(R3)
         if i == 3:
             R4 = set()
-            R4 = (core.U - core.C).intersection(core.R1)
+            R4 = (core.U - core.C).intersection(R1)
             yield "{} ⋂ {} ⋂ {}".format(R4, R2, R3), "!C ⋂ R1 | {}".format(R4)
         if i == 4:
-            R5 = set()
-            R5 = R4.intersection(core.R2)
+            # R5 = set()
+            R5 = R4.intersection(R2)
             yield "{} ⋂ {}".format(R5, R3), "R4 ⋂ R2 | {}".format(R5)
         if i == 5:
             R6 = set()
-            R6 = R5.intersection(core.R3)
+            R6 = R5.intersection(R3)
             yield "{}".format(R6), "R5 ⋂ R3 | {}".format(R6)
 
 

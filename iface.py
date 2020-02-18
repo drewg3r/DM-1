@@ -43,8 +43,8 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
         try:
             min = int(self.lineEdit_10.text())
             max = int(self.lineEdit_11.text())
-            U = set(range(min, max))
-            print(U)
+            core.U = set(range(min, max))
+            print(core.U)
         except:
             showError("Некоректно введені дані")
 
