@@ -1,7 +1,6 @@
 import sys
 from PyQt5 import QtWidgets
-import interface, iface2, iface3, iface4, iface5
-
+import interface.w1, iface2, iface3, iface4, iface5
 from PyQt5.QtWidgets import *
 import random
 import core
@@ -109,17 +108,17 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
             showError("Некоректно введені дані")
 
     def secondW_btn(self):
-        self.window = iface2.MyForm2()  # Создаём объект класса ExampleApp
+        self.window = iface2.MyForm2()
         self.window.show()
 
     def thirdW_btn(self):
-        self.window = iface3.MyForm3()  # Создаём объект класса ExampleApp
+        self.window = iface3.MyForm3()
         self.window.show()
 
     def fourthW_btn(self):
-        self.window = iface4.MyForm4()  # Создаём объект класса ExampleApp
+        self.window = iface4.MyForm4()
         self.window.show()
 
     def fifthW_btn(self):
-        self.window = iface5.MyForm5()  # Создаём объект класса ExampleApp
+        self.window = iface5.MyForm5()
         self.window.show()

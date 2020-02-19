@@ -1,9 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
-import interface.w1, core
+import interface, core
 from interface.w3 import Ui_Form3
-from PyQt5.QtWidgets import *
-import random
 
 # D = A ⋂ B ⋂ !C
 def calcgen():

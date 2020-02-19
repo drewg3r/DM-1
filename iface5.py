@@ -3,7 +3,6 @@ from PyQt5 import QtWidgets
 import interface, core
 from interface.w5 import Ui_Form5
 from PyQt5.QtWidgets import *
-import random
 
 
 def showMsg(text, icon, title):

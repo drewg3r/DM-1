@@ -1,9 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
-import interface.w1, core
+import interface, core
 from interface.w4 import Ui_Form4
-from PyQt5.QtWidgets import *
-import random
 
 
 def fintersection(A, B):
