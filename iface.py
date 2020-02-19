@@ -1,9 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
-import interface.w1, iface2, iface3, iface4
-from interface.w2 import Ui_Form2
-from interface.w3 import Ui_Form3
-from interface.w4 import Ui_Form4
+import interface, iface2, iface3, iface4, iface5
+
 from PyQt5.QtWidgets import *
 import random
 import core
@@ -34,6 +32,7 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
         self.pushButton_8.clicked.connect(self.secondW_btn)
         self.pushButton_9.clicked.connect(self.thirdW_btn)
         self.pushButton_10.clicked.connect(self.fourthW_btn)
+        self.pushButton_11.clicked.connect(self.fifthW_btn)
 
     def var_btn(self):
         try:
@@ -119,4 +118,8 @@ class MyApp(QtWidgets.QMainWindow, interface.w1.Ui_MainWindow):
 
     def fourthW_btn(self):
         self.window = iface4.MyForm4()  # Создаём объект класса ExampleApp
+        self.window.show()
+
+    def fifthW_btn(self):
+        self.window = iface5.MyForm5()  # Создаём объект класса ExampleApp
         self.window.show()

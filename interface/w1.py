@@ -12,7 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(809, 269)
+        MainWindow.resize(809, 261)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
@@ -143,7 +143,7 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Розрахувати"))
         self.label_9.setText(_translate("MainWindow", "--"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Множини"))
-        self.groupBox_3.setTitle(_translate("MainWindow", "Діапазон"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "Потужність"))
         self.label_4.setText(_translate("MainWindow", "B"))
         self.label_5.setText(_translate("MainWindow", "A"))
         self.label_6.setText(_translate("MainWindow", "C"))

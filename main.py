@@ -5,11 +5,7 @@ import core, iface, iface2
 from PyQt5.QtWidgets import *
 
 
-def main():
-    app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
-    window = iface.MyApp()  # Создаём объект класса ExampleApp
-    window.show()  # Показываем окно
-    app.exec_()  # и запускаем приложение
-
-
-main()
+app = QtWidgets.QApplication(sys.argv)
+window = iface.MyApp()
+window.show()
+app.exec_()

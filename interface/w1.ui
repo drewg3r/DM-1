@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>809</width>
-    <height>269</height>
+    <height>261</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -140,7 +140,7 @@
       </rect>
      </property>
      <property name="title">
-      <string>Діапазон</string>
+      <string>Потужність</string>
      </property>
      <widget class="QLabel" name="label_4">
       <property name="geometry">

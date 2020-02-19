@@ -19,3 +19,7 @@ C = {8,3,9}
 g = calcgen()
 print(next(g))
 print(next(g))
+
+with open("./results/w2.txt", "w") as f:
+    f.write("D = ")
+f.close()

@@ -30,6 +30,7 @@ class MyForm3(QtWidgets.QMainWindow, interface.w3.Ui_Form3):
         self.lineEdit_6.setText(str(core.B))
         self.lineEdit_5.setText(str(core.C))
         self.pushButton.clicked.connect(self.calc_btn)
+        self.pushButton_2.clicked.connect(self.save_btn)
         self.g = calcgen()
         # pushButton pushButton_2
 
@@ -40,3 +41,8 @@ class MyForm3(QtWidgets.QMainWindow, interface.w3.Ui_Form3):
             self.lineEdit_8.setText(r[1])
         except:
             pass
+
+    def save_btn(self):
+        with open("results/w3.txt", "w") as f:
+            f.write("D = " + self.lineEdit_7.text())
+        f.close()

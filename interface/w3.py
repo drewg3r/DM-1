@@ -14,7 +14,13 @@ class Ui_Form3(object):
         Form.setObjectName("Form")
         Form.resize(770, 280)
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(150, 10, 67, 17))
+        self.label.setGeometry(QtCore.QRect(290, 10, 201, 31))
+        font = QtGui.QFont()
+        font.setFamily("Ubuntu Mono")
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
         self.label.setObjectName("label")
         self.label_5 = QtWidgets.QLabel(Form)
         self.label_5.setGeometry(QtCore.QRect(20, 50, 16, 21))
@@ -59,7 +65,7 @@ class Ui_Form3(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Вікно 3"))
-        self.label.setText(_translate("Form", "formula"))
+        self.label.setText(_translate("Form", "D = A ⋂ B ⋂ !C"))
         self.label_5.setText(_translate("Form", "A"))
         self.label_4.setText(_translate("Form", "B"))
         self.label_6.setText(_translate("Form", "C"))
